@@ -6,3 +6,11 @@ extracter({
   dist: path.resolve(__dirname, '../example/dist'),
   watch: true
 });
+
+
+
+extracter({
+  src: path.resolve(__dirname, '../packages'),
+  dist: path.resolve(__dirname, '../danshengougou/dist'),
+  watch: true
+});

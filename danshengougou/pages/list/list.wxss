@@ -1,0 +1,37 @@
+
+.dsgg-content{padding:0px 4px;}
+
+.dsgg-header{height:100rpx;background:#20a0ff;padding:4px;border-top:1px solid #ccc;}
+.dsgg-header .zan-col{text-align:left;}
+.dsgg-header .dsgg-logo{width:300rpx;}
+.dsgg-header .dsgg-breed{color:#888;text-align:right;align-items: center;display: flex;justify-content: flex-end;height: 100%;}
+.dsgg-header .dsgg-breed .pet{border:1px solid #fff;text-align:center;border-radius:5px;color:#fff;padding:8px 20px;}
+
+.dsgg-breed-list{background:#20a0ff;height:auto;position: absolute;z-index:7;right:0px;left:0px;border-top:1px solid #ccc;
+padding:10px;}
+.dsgg-breed-list .zan-tag{margin-right:10px;margin-bottom:10px;padding:6px 20px;border-radius:5px;}
+
+
+.dsgg-swiper{margin:10px 0;display:block;height:100rpx;}
+.dsgg-swiper .slide-image{width:100%;}
+
+
+.dsgg-dog-list{padding:0px;}
+.dsgg-dog-list .zan-col{text-align:center;padding:0px 5px;}
+.dsgg-dog-list .zan-col .dog-show{width: 100%;position:relative;margin-bottom:4px;text-align: center;overflow: hidden;}
+.dsgg-dog-list .zan-col .dog-show .dog-tag-status{position: absolute;display: block;background-color: red;color: #fff;top:5px;left:-34px;transform: rotate(-45deg); width: 110px;padding:6px 0px;}
+.dsgg-dog-list .zan-col .zan-dsgg__img{width: 100%;border-radius: 5px;}
+.dsgg-dog-list .zan-col .dog-info{position: absolute;display: block; bottom: 4px;left:0px;right:0px;background-color: #000;opacity: 0.6;border-radius: 0 0 5px 5px;height: 23px;line-height: 23px;padding:4px 2px;}
+.dsgg-dog-list .zan-col .dog-info .count{color: #fff;}
+.dsgg-dog-list .zan-col .dog-info .birth{color: #fff;border-left:1px solid #fff;}
+
+
+
+
+.zan-col {
+  font-size: 12px;
+  color: #fff;
+}
+
+
+

@@ -1,0 +1,89 @@
+<view class="container" style="background:url('../../assets/images/bodybg.jpg') repeat #f5f6f7" >
+
+    <view class="zan-row dsgg-header">
+          <view class="zan-col zan-col-12">
+                <image class="dsgg-logo"
+                  src="../../assets/images/logo.png"
+                  mode="widthFix"></image>
+          </view>
+          <view class="zan-col zan-col-12 dsgg-breed">
+                <view class="pet">阿拉斯加阿拉斯加</view>
+          </view>
+    </view>
+
+    <view class="dsgg-breed-list" style="display:none;">
+        <view class="">
+            <view class="zan-tag zan-tag--plain">萨摩耶</view>
+            <view class="zan-tag zan-tag--danger zan-tag--plain">阿拉斯加</view>
+            <view class="zan-tag zan-tag--warn zan-tag--plain">马犬</view>
+            <view class="zan-tag zan-tag--primary zan-tag--plain">比熊</view>
+            <view class="zan-tag zan-tag--primary zan-tag--plain zan-tag--disabled">八哥</view>
+        </view>
+    </view>
+
+
+    <view class="dsgg-content">
+
+        <swiper class="dsgg-swiper" indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image" mode="widthFix"/>
+                </swiper-item>
+            </block>
+        </swiper>
+
+
+        <view class="zan-row dsgg-dog-list">
+
+
+
+            <view class="zan-col zan-col-12">
+                <navigator url="../../pages/detail/detail" hover-class="navigator-hover">
+                    <view class='dog-show'>
+                        <image class="zan-dsgg__img"
+                        src="http://img.danshengougou.com/upload/pet/1a0645cad906095456297aa09ac17363.jpg?x-oss-process=image/crop,x_0,y_0,w_800,h_800,g_center"
+                        mode="widthFix"
+                        ></image>
+
+                        <view class='dog-tag-status'>预定中</view>
+
+                        <view class='dog-info zan-row'>
+                            <view class='count zan-col zan-col-12'>4公3母</view>
+                            <view class='birth zan-col zan-col-12'>2个月9天</view>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+
+
+
+            <view class="zan-col zan-col-12">
+                <navigator url="../../pages/detail/detail" hover-class="navigator-hover">
+                    <view class='dog-show'>
+                        <image class="zan-dsgg__img"
+                        src="http://img.danshengougou.com/upload/pet/1a0645cad906095456297aa09ac17363.jpg?x-oss-process=image/crop,x_0,y_0,w_800,h_800,g_center"
+                        mode="widthFix"
+                        ></image>
+
+                        <view class='dog-tag-status'>预定中</view>
+
+                        <view class='dog-info zan-row'>
+                            <view class='count zan-col zan-col-12'>4公3母</view>
+                            <view class='birth zan-col zan-col-12'>2个月9天</view>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+
+
+
+
+
+
+
+        </view>
+
+    </view>
+
+</view>

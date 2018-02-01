@@ -1,0 +1,64 @@
+<import src="../../dist/steps/index.wxml" />
+
+<view class="container" style="background:url('../../assets/images/bodybg.jpg') repeat #f5f6f7" >
+
+    <view class="dsgg-detail">
+        <view class="header-img">
+            <image class="zan-dsgg__img" src="http://img.danshengougou.com/upload/pet/1a0645cad906095456297aa09ac17363.jpg?x-oss-process=image/crop,x_0,y_0,w_800" mode="widthFix"></image>
+        </view>
+
+        <view class="info zan-row">
+            <view class="zan-col zan-col-24">
+                <text>品种：</text><text>萨摩耶</text>
+            </view>
+            <view class="zan-col zan-col-24">
+                <text>出生日期：</text><text>2017-01-01</text>
+            </view>
+            <view class="zan-col zan-col-24">
+                <text>品种：</text><text>萨摩耶</text>
+            </view>
+            <view class="zan-col zan-col-24">
+                <text>出生日期：</text><text>2017-01-01</text>
+            </view>
+            <view class="zan-col zan-col-24">
+                <text>品种：</text><text>萨摩耶</text>
+            </view>
+            <view class="zan-col zan-col-24">
+                <text>出生日期：</text><text>2017-01-01</text>
+            </view>
+            <view class="zan-col zan-col-24">
+                <text>出生日期：</text><text>2017-01-01</text>
+            </view>
+        </view>
+        
+        <view class="grow-up">
+
+            <view class="zan-panel-title">垂直方向的steps</view>
+            <view class="zan-panel">
+                <view class="zan-cell zan-cell">
+                    <view class="zan-cell__bd">
+                        <template is="zan-steps" data="{{ type: 'vertical', hasDesc: true, steps, className: 'step-has-content' }}"></template>
+                    </view>
+                </view>
+            </view>
+
+        </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </view>
+</view>
