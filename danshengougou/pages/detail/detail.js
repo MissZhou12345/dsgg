@@ -1,34 +1,13 @@
-Page({
-  data: {
-    steps: [
-      {
-        done: true,
-        current: true,
-        text: '步骤一',
-        desc: '10.01',
-        content: '多萨比恢复i打扮field都是多萨比恢复i打扮field都是多萨比恢复i打扮field都是多萨比恢复i打扮field都是多萨比恢复i打扮field都是'
+const { Actionsheet, extend } = require('../../dist/index');
+const { CubDetail } = require('../../services/index');
+
+Page(extend({}, Actionsheet,{
+      data: {
+
       },
-      {
-        done: false,
-        current: false,
-        text: '步骤二',
-        desc: '10.02',
-        content: '多萨比恢复i打扮field都是多萨比恢复i打扮field都是多萨比恢复i打扮field都是多萨比恢复i打扮field都是多萨比恢复i打扮field都是'
+      onLoad: function () {
+
       },
-      {
-        done: false,
-        current: false,
-        text: '步骤三',
-        desc: '10.03',
-        content: ''
+      onShow: function() {
       }
-    ]
-  },
-
-  onLoad: function () {
-
-  },
-
-  onShow: function() {
-  }
-});
+}, CubDetail));

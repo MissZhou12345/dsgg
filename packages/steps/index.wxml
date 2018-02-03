@@ -26,7 +26,7 @@
         <view class="zan-steps__circle"></view>
       </view>
       <view class="zan-steps__line"></view>
-      <view wx:if="{{ step.content }}" class="zan-steps__content">{{ step.content }}</view>
+      <rich-text wx:if="{{ step.content }}" class="zan-steps__content">{{ step.content }}</rich-text>
     </view>
   </view>
 </template>

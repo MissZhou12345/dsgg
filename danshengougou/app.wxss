@@ -5,6 +5,8 @@
   min-height: 100vh;
   box-sizing: border-box;
   padding: 0;
+  color: #777;
+  font-size: 12px;
 }
 .container::before {
   position: fixed;

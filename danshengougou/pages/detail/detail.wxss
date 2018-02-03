@@ -1,5 +1,39 @@
-.dsgg-detail{backgroud:red;}
+.dsgg-detail{backgroud:red;position:relative;}
+.dsgg-detail swiper{height: 240px;}
+.dsgg-detail .slide-image{width: 100%;}
+
+
+.dsgg-detail .info{padding: 15px 18px;line-height: 22px;font-size: 12px;}
+.dsgg-detail .info .ym-qc{}
+.dsgg-detail .info .view-tupping{color: green;}
+.dsgg-detail .info .ym-qc .item{line-height: 16px;}
+.dsgg-detail .info .ym-qc .item text.title{text-align:justify;text-align-last:justify;width:42px;display: block;float: left;}
+.dsgg-detail .info .ym-qc .top{margin-top:4px;}
+.dsgg-detail .info .ym-qc .item text.ym-one{color: green;}
+.dsgg-detail .info .ym-qc .item text.ym-two{color: green;}
+.dsgg-detail .info .ym-qc .item text.ym-three{color: green;}
+.dsgg-detail .info .ym-qc .item text.ym-kq{color: blue;}
+
+.dsgg-detail .info .ym-qc .item text.qc-one{color: yellow;}
+.dsgg-detail .info .ym-qc .item text.qc-two{color: yellow;}
+
 
 .step-has-content .zan-steps__icons{top:25px;z-index: 4;}
 .step-has-content .zan-steps__line{height:100%;top:32px;z-index: 3;}
-.step-has-content .zan-steps__content{padding-left:26px;height:auto;}
+.step-has-content .zan-steps__content{padding-left:26px;height:auto;display:block;}
+
+
+.zan-popup__container{width: 100%;height:217px;}
+.zan-popup__container .tupping{width: 100%;}
+.zan-popup--show{display:block;}
+.zan-popup--hide{display:none;}
+
+.dsgg-detail .footer{margin-bottom: 55px;}
+
+.detail-footer-nav{position:fixed;z-index: 4;bottom: 0;left:0px;right: 0px; height: 45px;background: #fff;border-top: 1px solid #e5e5e5;padding-left:20px;
+}
+.detail-footer-nav .price{height: 100%;}
+.detail-footer-nav .price text:after{display:inline-block;width:0;height:45px;vertical-align:middle;content:"";}
+.detail-footer-nav .buy{}
+.detail-footer-nav .buy button{border-radius: 0px;border-width:0;}
+
