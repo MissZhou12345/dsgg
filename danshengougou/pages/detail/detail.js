@@ -1,7 +1,7 @@
-const { Actionsheet, extend } = require('../../dist/index');
+const { Actionsheet, Tab,extend } = require('../../dist/index');
 const { CubDetail } = require('../../services/index');
 
-Page(extend({}, Actionsheet,{
+Page(extend({}, Actionsheet,Tab,{
       data: {
 
       },

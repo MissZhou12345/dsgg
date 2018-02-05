@@ -1,4 +1,5 @@
 <import src="../../dist/steps/index.wxml" />
+<import src="../../dist/tab/index.wxml" />
 
 
 <view class="container" style="background:url('../../assets/images/bodybg.jpg') repeat #f5f6f7" >
@@ -88,9 +89,12 @@
         <view class='detail-footer-nav zan-row'>
             <view class="zan-col zan-col-16 price"><text>定金：￥4343.00-￥4343.00</text></view>
             <view class="zan-col zan-col-8 buy">
-                <button class="zan-btn zan-btn--primary">立即购买</button>
+                <button class="zan-btn zan-btn--primary" bindtap="toggleBottomPopup">立即购买</button>
             </view>
         </view>
+
+
+        
 
 
 
@@ -108,7 +112,7 @@
 
 
 
-<view class="zan-popup {{ showPopup ? 'zan-popup--show' : 'zan-popup--hide'}}">
+<view class="zan-popup {{ showTuppingPopup ? 'zan-popup--show' : 'zan-popup--hide'}}">
     <view class="zan-popup__mask" bindtap="handleTogglePopupTupping"></view>
     <view class="zan-popup__container popup-example--center">
         <view class="section tc">
@@ -118,3 +122,49 @@
         </view>
     </view>
 </view>
+
+
+
+<view class="popup-example--bottom zan-popup zan-popup--bottom {{ showCubListPopup ? 'zan-popup--show' : ''}}">
+    <view class="zan-popup__mask" catchtap="toggleBottomPopup"></view>
+    <view class="zan-popup__container">
+
+
+        <view class='detail-footer-cublist zan-row'>
+
+            <view class='cub-tab'>
+                <template is="zan-tab" data="{{ ...tab1, componentId: 'tab1' }}"></template>
+                <view class='cub-detail zan-row'>
+                    <view class="zan-col zan-col-10">
+                        <image src="http://img.danshengougou.com/upload/pet/15ba67defeb00bbece0bb515ebd41c50.jpg" class="cub-img" mode="widthFix"/>
+                    </view>
+                    <view class="zan-col zan-col-14">
+                        <view class='zan-row'>
+                            <view class='zan-col zan-col-12'>号数：2号</view>
+                            <view class='zan-col zan-col-12'>性别：公</view>
+                            <view class='zan-col zan-col-24'>售价：￥434.00</view>
+                            <view class='zan-col zan-col-24'>定金：￥434.00</view>
+                        </view>
+                        <view class='tips'>温馨提示：</view>
+                        <view>1、请不要冲动消费;</view>
+                        <view>2、如果不能给它最好的,至少把你的爱给足;</view>
+                        <view>3、是宠物，是朋友，更是家人。</view>
+
+
+
+                        <image bindtap="testErWeiMa" src="../../assets/images/seller.jpg" class="" mode="widthFix"/>
+                    </view>
+                </view>
+            </view>
+            <view>
+                <button class="zan-btn zan-btn--primary btn-buy">联系购买</button>
+            </view>
+
+        </view>
+
+        
+
+    </view>
+</view>
+
+
