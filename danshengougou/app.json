@@ -1,14 +1,26 @@
 {
-  "pages": [
-    "pages/detail/detail",
-    "pages/list/list"
-  ],
-  "window": {
-    "navigationBarBackgroundColor": "#20a0ff",
-    "navigationBarTitleText": "单身狗狗",
-    "navigationBarTextStyle": "white",
-    "backgroundTextStyle": "dark",
-    "backgroundColor": "#f9f9f9"
-  },
-  "debug": true
+    "pages": [
+        "pages/list/list",
+        "pages/detail/detail"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#20a0ff",
+        "navigationBarTitleText": "单身狗狗",
+        "navigationBarTextStyle": "white",
+        "backgroundTextStyle": "dark",
+        "backgroundColor": "#f9f9f9"
+    },
+    "debug": true,
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/list/list",
+                "text": "回到首页"
+            },
+            {
+                "pagePath": "pages/detail/detail",
+                "text": "个人中心"
+            }
+        ]
+    }
 }

@@ -1,13 +1,13 @@
-const { Actionsheet, Tab,extend } = require('../../dist/index');
+const { Actionsheet, Tab, Toast, extend } = require('../../dist/index');
 const { CubDetail } = require('../../services/index');
 
-Page(extend({}, Actionsheet,Tab,{
-      data: {
+Page(extend({}, Actionsheet, Tab, Toast, {
+    data: {
 
-      },
-      onLoad: function () {
+    },
+    onLoad: function () {
 
-      },
-      onShow: function() {
-      }
+    },
+    onShow: function () {
+    }
 }, CubDetail));

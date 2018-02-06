@@ -39,10 +39,17 @@
 
 
 
-.detail-footer-cublist{position:fixed;z-index: 5;bottom: 0;left:0px;right: 0px; height: 530px;background: #fff;border-top: 1px solid #e5e5e5;}
+.detail-footer-cublist{position:fixed;z-index: 5;bottom: 0;left:0px;right: 0px; height: auto;background: #fff;border-top: 1px solid #e5e5e5;}
 .detail-footer-cublist .cub-tab{}
-.detail-footer-cublist .cub-tab .cub-detail{font-size: 12px;}
-.detail-footer-cublist .cub-tab .cub-detail .cub-img{width: 100%;}
-.detail-footer-cublist .cub-tab .cub-detail .tips{color: red;font-size: 14px;}
+.detail-footer-cublist .cub-tab .cub-detail{font-size: 12px;padding:10px 0 3px 4px;color: #777;}
+.detail-footer-cublist .cub-tab .cub-detail .cub-img{width: 95%;}
+.detail-footer-cublist .cub-tab .cub-detail .data{width: 100%;line-height: 12px;}
+.detail-footer-cublist .cub-tab .cub-detail .show-data{line-height: 20px;}
+.detail-footer-cublist .cub-tab .cub-detail .tips-title{color: red;font-size: 14px;margin: 10px 0px;}
+.view-green{color: green;}
+.detail-footer-cublist .cub-tab .cub-detail .tips-content{line-height: 16px;}
+.detail-footer-cublist .cub-tab .cub-detail .tips-content text{display: block;}
+.detail-footer-cublist .cub-tab .cub-detail .buy{line-height: 22px;margin-top: 18px;}
+.detail-footer-cublist .cub-tab .cub-detail .buy .copy{line-height: 12px;}
 .detail-footer-cublist .btn-buy{}
 
