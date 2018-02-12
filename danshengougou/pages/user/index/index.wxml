@@ -1,0 +1,30 @@
+<view class="container" style="background:url('/assets/images/bodybg.jpg') repeat #f5f6f7">
+
+    <view class="dsgg-user-info">
+        <image src="http://img.danshengougou.com/upload/pet/1a0645cad906095456297aa09ac17363.jpg?x-oss-process=image/crop,x_0,y_0,w_800,h_800,g_center" class="head-img" mode="widthFix" />
+        <text>桃子，我是菠萝</text>
+    </view>
+
+    <view class="zan-panel">
+        <view class="zan-cell zan-cell--access">
+
+            <view class="zan-cell__bd">
+                <navigator url="/pages/user/brood/index" hover-class="navigator-hover">我的狗崽</navigator>
+            </view>
+            <view class="zan-cell__ft">
+                <navigator url="/pages/user/brood/index" hover-class="navigator-hover"></navigator>
+            </view>
+
+        </view>
+    </view>
+    <view class="zan-panel">
+        <view class="zan-cell zan-cell--access">
+            <view class="zan-cell__bd">我的代理</view>
+            <view class="zan-cell__ft"></view>
+        </view>
+    </view>
+
+
+
+
+</view>

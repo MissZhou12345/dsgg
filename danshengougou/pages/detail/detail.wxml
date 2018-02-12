@@ -1,9 +1,9 @@
-<import src="../../dist/steps/index.wxml" />
-<import src="../../dist/tab/index.wxml" />
-<import src="../../dist/toast/index.wxml" />
+<import src="/dist/steps/index.wxml" />
+<import src="/dist/tab/index.wxml" />
+<import src="/dist/toast/index.wxml" />
 
 
-<view class="container" style="background:url('../../assets/images/bodybg.jpg') repeat #f5f6f7" >
+<view class="container" style="background:url('/assets/images/bodybg.jpg') repeat #f5f6f7" >
 
     <view class="dsgg-detail">
         <view class="header-img">

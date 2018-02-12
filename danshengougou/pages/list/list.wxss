@@ -1,5 +1,5 @@
 
-.dsgg-content{padding:0px 4px;}
+.dsgg-content{padding:0px 4px;margin-bottom:50px;}
 
 .dsgg-header{height:100rpx;background:#20a0ff;padding:4px;border-top:1px solid #ccc;}
 .dsgg-header .zan-col{text-align:left;}
@@ -33,5 +33,9 @@ padding:10px;}
   color: #fff;
 }
 
+
+
+.dsgg-nav{position:fixed;bottom: 0px;background: #fff;width: 100%;text-align: center;padding: 15px 0px;border-top:1px solid #c2c2c4;}
+.dsgg-nav .content{color: #999;}
 
 

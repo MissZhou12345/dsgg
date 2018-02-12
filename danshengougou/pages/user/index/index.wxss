@@ -1,0 +1,4 @@
+/* pages/user/index.wxss */
+.dsgg-user-info{text-align: center;padding: 20px 0px 40px 0px;background: #fff;}
+.dsgg-user-info image{width: 80px;margin-bottom: 10px;border-radius: 50px;}
+.dsgg-user-info text{display: block;}
