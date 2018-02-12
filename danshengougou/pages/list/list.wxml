@@ -161,8 +161,6 @@
 
 
 
-
-
     <view class='dsgg-nav zan-row'>
         <view class='zan-col zan-col-24 item'>
             <navigator url="/pages/user/index/index" hover-class="navigator-hover">
@@ -170,7 +168,6 @@
             </navigator>
         </view>
     </view>
-
 
 
 </view>

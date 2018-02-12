@@ -1,7 +1,7 @@
 <import src="/dist/loadmore/index.wxml" />
 <import src="/dist/actionsheet/index.wxml" />
 
-<view class="container" style="background:url('/assets/images/bodybg.jpg') repeat #f5f6f7">
+<view class="container" style="margin-bottom:50px;background:url('/assets/images/bodybg.jpg') repeat #f5f6f7">
 
 
     <view class="zan-panel cub-list">
@@ -30,21 +30,66 @@
             </view>
         </view>
         <view class='zan-row operate'>
-            <view class='zan-col zan-col-8'><navigator url="/pages/user/brood-edit/index?cubid=32" hover-class="navigator-hover">编辑</navigator></view>
-            <view class='zan-col zan-col-8'><navigator url="/pages/user/cub-edit/index?cubid=32" hover-class="navigator-hover">编辑崽崽</navigator></view>
+            <view class='zan-col zan-col-8'>
+                <navigator url="/pages/user/brood-form/index?cubid=32" hover-class="navigator-hover">编辑</navigator>
+            </view>
+            <view class='zan-col zan-col-8'>
+                <navigator url="/pages/user/cub-form/index?cubid=32" hover-class="navigator-hover">编辑崽崽</navigator>
+            </view>
             <view class='zan-col zan-col-8' bindtap='handleChangeCubStatus' data-id="ddd">更改状态</view>
         </view>
     </view>
 
+    <view class="zan-panel cub-list">
+        <view class="zan-card">
+            <view class="zan-card__thumb">
+                <image class="zan-card__img" src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg" mode="aspectFit"></image>
+            </view>
+            <view class="zan-card__detail">
+                <view class="zan-card__detail-row">
+                    <view class="zan-card__right-col">¥ 999.99</view>
+                    <view class="zan-card__left-col zan-ellipsis--l2">
+                        红烧牛肉
+                    </view>
+                </view>
 
+                <view class="zan-card__detail-row zan-c-gray-darker">
+                    <view class="zan-card__right-col">x2</view>
+                    <view class="zan-card__left-col">
+                        3000克 50%
+                    </view>
+                </view>
 
-
+                <view class="zan-card__detail-row zan-c-gray-darker">
+                    <view class="zan-card__left-col zan-c-red">已发货</view>
+                </view>
+            </view>
+        </view>
+        <view class='zan-row operate'>
+            <view class='zan-col zan-col-8'>
+                <navigator url="/pages/user/brood-form/index?cubid=32" hover-class="navigator-hover">编辑</navigator>
+            </view>
+            <view class='zan-col zan-col-8'>
+                <navigator url="/pages/user/cub-form/index?cubid=32" hover-class="navigator-hover">编辑崽崽</navigator>
+            </view>
+            <view class='zan-col zan-col-8' bindtap='handleChangeCubStatus' data-id="ddd">更改状态</view>
+        </view>
+    </view>
 
     <template is="zan-actionsheet" data="{{ ...baseActionsheet }}"></template>
+
+
+    <template is="zan-loadmore" data="{{ loading: true }}" />
+    <template is="zan-loadmore" data="{{ nodata: true }}" />
+    <template is="zan-loadmore" data="{{ nomore: true }}" />
 
 </view>
 
 
-<template is="zan-loadmore" data="{{ loading: true }}" />
-<template is="zan-loadmore" data="{{ nodata: true }}" />
-<template is="zan-loadmore" data="{{ nomore: true }}" />
+<view class='dsgg-nav zan-row'>
+    <view class='zan-col zan-col-24 item'>
+        <navigator url="/pages/user/brood-form/index" hover-class="navigator-hover">
+            <view class='content'><text class='zan-icon zan-icon-add-o'></text>添加狗崽</view>
+        </navigator>
+    </view>
+</view>

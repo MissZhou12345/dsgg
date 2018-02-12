@@ -1,13 +1,11 @@
 {
     "pages": [
-        "pages/user/brood/index",
-        
+        "pages/user/brood-form/index",
         "pages/list/list",
         "pages/detail/detail",
         "pages/user/index/index",
-        
-        "pages/user/brood-edit/index",
-        "pages/user/cub-edit/index"
+        "pages/user/brood/index",
+        "pages/user/cub-form/index"
     ],
     "window": {
         "navigationBarBackgroundColor": "#20a0ff",

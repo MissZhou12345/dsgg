@@ -34,8 +34,3 @@ padding:10px;}
 }
 
 
-
-.dsgg-nav{position:fixed;bottom: 0px;background: #fff;width: 100%;text-align: center;padding: 15px 0px;border-top:1px solid #c2c2c4;}
-.dsgg-nav .content{color: #999;}
-
-
