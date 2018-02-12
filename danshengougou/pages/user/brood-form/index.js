@@ -1,10 +1,10 @@
-const { Actionsheet, extend } = require('../../../dist/index');
+const { Actionsheet, NoticeBar, extend } = require('../../../dist/index');
 const { CubUserBrood } = require('../../../services/index');
 
 
-Page(extend({}, Actionsheet, {
+Page(extend({}, NoticeBar, Actionsheet, {
     data: {
-        cubid:''
+        broodid:''
     },
     onLoad: function () {
 

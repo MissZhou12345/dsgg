@@ -20,6 +20,8 @@
         </view>
 
 
+分享出去
+
         <view class="zan-panel">
             <view class="info zan-row">
                 <view class="zan-col zan-col-12">
@@ -68,6 +70,10 @@
 
             </view>
         </view>
+
+
+        添加动态
+
 
         <view class="grow-up zan-panel">
 

@@ -1,2 +1,77 @@
-<!--pages/user/cub-form/index.wxml-->
-<text>pages/user/cub-form/index.wxml</text>
+<import src="/dist/tab/index.wxml" />
+<import src="/dist/field/index.wxml" />
+<import src="/dist/noticebar/index.wxml" />
+
+
+<view class="container" style="background:url('/assets/images/bodybg.jpg') repeat #f5f6f7">
+
+    <template is="zan-tab" data="{{ ...tab1, componentId: 'tab1' }}"></template>
+
+
+    <form bindsubmit="formSubmit" bindreset="formReset">
+
+        <view class="zan-panel">
+
+
+            <template is="zan-field" data="{{ ...cubConfig.base.cubId }}"></template>
+
+
+            <template is="zan-field" data="{{ ...cubConfig.base.price }}"></template>
+
+
+            <view class="zan-cell zan-field">
+                <view class="zan-cell__hd zan-field__title">状态</view>
+                <picker mode="selector" class="zan-field__input zan-cell__bd" range="{{ cubStatusList }}" range-key="name" value="cubStatusList[curCubStatusIndex].id" bindchange="onCubStatusChange">
+                    {{ cubStatusList[curCubStatusIndex].name }}
+                </picker>
+            </view>
+
+
+
+            <view class="zan-cell zan-field">
+                <view class="zan-cell__hd zan-field__title">性别</view>
+                <picker mode="selector" class="zan-field__input zan-cell__bd" range="{{ generList }}" range-key="name" value="generList[curGenerIndex].id" bindchange="onGenerChange">
+                    {{ generList[curGenerIndex].name }}
+                </picker>
+            </view>
+
+        </view>
+
+
+
+        <view class="zan-panel">
+
+
+            <view class="zan-cell zan-field attachment">
+                <view class='title'>
+                    <view class="zan-cell__hd zan-field__title">封面</view>
+                    <view class='num zan-pull-right'>
+                        <text class='ing'>0</text>
+                        <text class='hx'>/</text>
+                        <text class='finish'>2</text>
+                    </view>
+                </view>
+
+                <view class='error'>
+                    <template is="zan-noticebar" data="{{ ...static1, componentId: 'static1'  }}"></template>
+                </view>
+
+                <view class='list'>
+                    <view class='item'>
+                        <image src="http://img.danshengougou.com/upload/pet/1a0645cad906095456297aa09ac17363.jpg?x-oss-process=image/crop,x_0,y_0,w_800,h_800,g_center" mode="widthFix"></image>
+                        <view class='close'>x</view>
+                        <view class='progress'>29%</view>
+                    </view>
+                    <view class='item add'>
+                        <text>+</text>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+
+    </form>
+
+
+</view>

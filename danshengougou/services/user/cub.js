@@ -1,9 +1,9 @@
 const { extend } = require('../../dist/index');
-const { uiChangeStatus } = require('./cub-ui');
+const { uiCubList, uiCubForm } = require('./cub-ui');
 
 
-const _data = extend({}, uiChangeStatus.data);
-const _function = extend({}, uiChangeStatus);
+const _data = extend({}, uiCubList.data, uiCubForm.data);
+const _function = extend({}, uiCubList, uiCubForm);
 
 
 module.exports = extend({}, _function, { data: _data });

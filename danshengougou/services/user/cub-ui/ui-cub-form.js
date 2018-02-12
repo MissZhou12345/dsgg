@@ -1,26 +1,32 @@
-const broodConfig = require('./field-config');
+const cubConfig = require('./field-config');
 
 module.exports = {
     data: {
-        broodConfig,
-        breedList: [{ 'id': 0, 'name': '品种' }, { 'id': 1, 'name': '萨摩耶' }, { 'id': 2, 'name': '马犬' }, { 'id': 3, 'name': '苏牧' }],
-        curBreedIndex: 0,
+        cubConfig,
+        generList: [{ 'id': 1, 'name': '公' }, { 'id': 2, 'name': '母' }],
+        curGenerIndex: 1,
 
+
+        cubStatusList: [{ 'id': 1, 'name': '已售出' }, { 'id': 2, 'name': '已售罄' }],
+        curCubStatusIndex: 1,
 
         static1: {
             text: '足协杯战线连续第2年上演广足协杯战线连续第2年上演广州德比战州德比战'
         }
     },
     onShow() {
-        if (this.route != 'pages/user/brood/index') {
         // initScroll的通告栏如果宽度足够显示内容将保持静止
-            this.initZanNoticeBarScroll('static1');
-        }
+        this.initZanNoticeBarScroll('static1');
+    },
+    onCubStatusChange(e) {
+        this.setData({
+            curCubStatusIndex: e.detail.value
+        });
     },
     
-    onBreedChange(e) {
+    onGenerChange(e) {
         this.setData({
-            curBreedIndex: e.detail.value
+            curGenerIndex: e.detail.value
         });
     },
 

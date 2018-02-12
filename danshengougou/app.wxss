@@ -43,3 +43,21 @@
 .dsgg-nav .content text.zan-icon{margin-right: 4px;}
 
 
+.attachment{display: block;height: auto;overflow: hidden;}
+.attachment .title{display: block;height: 32px;line-height:32px;}
+.attachment .zan-field__title{float: left;}
+.attachment .error{width: 100%;margin:4px 0px 10px 0px;}
+.attachment .error .zan-noticebar{margin-bottom: 4px;}
+.attachment .num{}
+.attachment .num .ing{}
+.attachment .num .finish{}
+.attachment .list{width: 100%;height: auto;}
+.attachment .list .item{position:relative;float: left;width:156rpx;height: 156rpx; 
+margin-right: 6px;margin-bottom: 4px;}
+.attachment .list .item  image{width: 100%;}
+.attachment .list .item .progress{position: absolute;bottom: 0px;background: #000;opacity: 0.6;color: #fff;width: 100%;text-align: center;}
+.attachment .list .item .close{position: absolute;top:0px;right:0px;color: #fff;background: #000;opacity: 0.6;width: 16px;height: 16px;text-align: center;line-height: 15px;}
+.attachment .list .add{border:1px solid #ccc;text-align: center;}
+.attachment .list .add text{font-size: 40px;color: #ccc;display: block;line-height:145rpx;width: 100%;height: 100%;}
+
+

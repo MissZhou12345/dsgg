@@ -1,10 +1,10 @@
 {
     "pages": [
-        "pages/user/brood-form/index",
         "pages/list/list",
         "pages/detail/detail",
         "pages/user/index/index",
         "pages/user/brood/index",
+        "pages/user/brood-form/index",
         "pages/user/cub-form/index"
     ],
     "window": {

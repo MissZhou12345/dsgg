@@ -31,10 +31,10 @@
         </view>
         <view class='zan-row operate'>
             <view class='zan-col zan-col-8'>
-                <navigator url="/pages/user/brood-form/index?cubid=32" hover-class="navigator-hover">编辑</navigator>
+                <navigator url="/pages/user/brood-form/index?broodid=32" hover-class="navigator-hover">编辑</navigator>
             </view>
             <view class='zan-col zan-col-8'>
-                <navigator url="/pages/user/cub-form/index?cubid=32" hover-class="navigator-hover">编辑崽崽</navigator>
+                <navigator url="/pages/user/cub-form/index?broodid=32" hover-class="navigator-hover">编辑崽崽</navigator>
             </view>
             <view class='zan-col zan-col-8' bindtap='handleChangeCubStatus' data-id="ddd">更改状态</view>
         </view>
@@ -67,10 +67,10 @@
         </view>
         <view class='zan-row operate'>
             <view class='zan-col zan-col-8'>
-                <navigator url="/pages/user/brood-form/index?cubid=32" hover-class="navigator-hover">编辑</navigator>
+                <navigator url="/pages/user/brood-form/index?broodid=32" hover-class="navigator-hover">编辑</navigator>
             </view>
             <view class='zan-col zan-col-8'>
-                <navigator url="/pages/user/cub-form/index?cubid=32" hover-class="navigator-hover">编辑崽崽</navigator>
+                <navigator url="/pages/user/cub-form/index?broodid=32" hover-class="navigator-hover">编辑崽崽</navigator>
             </view>
             <view class='zan-col zan-col-8' bindtap='handleChangeCubStatus' data-id="ddd">更改状态</view>
         </view>
