@@ -5,7 +5,8 @@
         "pages/user/index/index",
         "pages/user/brood/index",
         "pages/user/brood-form/index",
-        "pages/user/cub-form/index"
+        "pages/user/cub-form/index",
+        "pages/trends/add/index"
     ],
     "window": {
         "navigationBarBackgroundColor": "#20a0ff",

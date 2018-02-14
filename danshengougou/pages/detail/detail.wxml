@@ -3,16 +3,15 @@
 <import src="/dist/toast/index.wxml" />
 
 
-<view class="container" style="background:url('/assets/images/bodybg.jpg') repeat #f5f6f7" >
+<view class="container" style="background:url('/assets/images/bodybg.jpg') repeat #f5f6f7">
 
     <view class="dsgg-detail">
         <view class="header-img">
 
-            <swiper class="dsgg-swiper" indicator-dots="{{indicatorDots}}"
-                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <swiper class="dsgg-swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
                 <block wx:for="{{imgUrls}}">
                     <swiper-item>
-                        <image src="{{item}}" class="slide-image" mode="aspectFill"/>
+                        <image src="{{item}}" class="slide-image" mode="aspectFill" />
                     </swiper-item>
                 </block>
             </swiper>
@@ -20,43 +19,78 @@
         </view>
 
 
-分享出去
+        <view class='zan-panel tools'>
+
+            <view class='add-trends'>
+                <navigator url="/pages/trends/add/index" hover-class="navigator-hover">
+                    <text class='zan-icon zan-icon-add'></text>
+                    <text>添加动态</text>
+                </navigator>
+            </view>
+
+            <view class='share zan-pull-right'>
+                <text class='zan-icon zan-icon-like'></text>
+                <text>分享出去</text>
+            </view>
+
+        </view>
 
         <view class="zan-panel">
             <view class="info zan-row">
                 <view class="zan-col zan-col-12">
-                    <text>品种：</text><text>阿拉斯加阿拉斯加</text>
+                    <text>品种：</text>
+                    <text>阿拉斯加阿拉斯加</text>
                 </view>
                 <view class="zan-col zan-col-12">
-                    <text>级别：</text><text>宠物级</text>
+                    <text>级别：</text>
+                    <text>宠物级</text>
                 </view>
                 <view class="zan-col zan-col-12">
-                    <text>父母：</text><text class='view-tupping' bindtap="handleTogglePopupTupping">点击查看</text>
+                    <text>父母：</text>
+                    <text class='view-tupping' bindtap="handleTogglePopupTupping">点击查看</text>
                 </view>
                 <view class="zan-col zan-col-12">
-                    <text>数量：</text><text>0公4母（3公4母）</text>
+                    <text>数量：</text>
+                    <text>0公4母（3公4母）</text>
                 </view>
                 <view class="zan-col zan-col-24">
-                    <text>生日：</text><text>2017-01-01（2个月09天）</text>
+                    <text>生日：</text>
+                    <text>2017-01-01（2个月09天）</text>
                 </view>
 
                 <view class="zan-col zan-col-24 ym-qc">
 
                     <view class="zan-row">
-                        <view class="zan-col zan-col-4"><text>驱虫：</text></view>
+                        <view class="zan-col zan-col-4">
+                            <text>驱虫：</text>
+                        </view>
                         <view class="zan-col zan-col-20">
-                            <view class='item top'><text class='title qc-one'>第一次</text><text class='qc-one'>：</text>2012-02-03</view>
-                            <view class='item'><text class='title qc-one'>第一次</text><text class='qc-one'>：</text>2012-02-03</view>
+                            <view class='item top'>
+                                <text class='title qc-one'>第一次</text>
+                                <text class='qc-one'>：</text>2012-02-03</view>
+                            <view class='item'>
+                                <text class='title qc-one'>第一次</text>
+                                <text class='qc-one'>：</text>2012-02-03</view>
                         </view>
                     </view>
 
                     <view class="zan-row">
-                        <view class="zan-col zan-col-4"><text>疫苗：</text></view>
+                        <view class="zan-col zan-col-4">
+                            <text>疫苗：</text>
+                        </view>
                         <view class="zan-col zan-col-20">
-                            <view class='item top'><text class='title ym-one'>第一针</text><text class='ym-one'>：</text>2012-02-03</view>
-                            <view class='item'><text class='title ym-two'>第一针</text><text class='ym-two'>：</text>2012-02-03</view>
-                            <view class='item'><text class='title ym-three'>第一针</text><text class='ym-three'>：</text>2012-02-03</view>
-                            <view class='item'><text class='title ym-kq'>狂犬</text><text class='ym-kq'>：</text>2012-02-03</view>
+                            <view class='item top'>
+                                <text class='title ym-one'>第一针</text>
+                                <text class='ym-one'>：</text>2012-02-03</view>
+                            <view class='item'>
+                                <text class='title ym-two'>第一针</text>
+                                <text class='ym-two'>：</text>2012-02-03</view>
+                            <view class='item'>
+                                <text class='title ym-three'>第一针</text>
+                                <text class='ym-three'>：</text>2012-02-03</view>
+                            <view class='item'>
+                                <text class='title ym-kq'>狂犬</text>
+                                <text class='ym-kq'>：</text>2012-02-03</view>
                         </view>
                     </view>
 
@@ -72,7 +106,6 @@
         </view>
 
 
-        添加动态
 
 
         <view class="grow-up zan-panel">
@@ -87,21 +120,23 @@
 
 
         <view class="zan-panel footer">
-        
-        footer
+
+            footer
 
         </view>
 
 
         <view class='detail-footer-nav zan-row'>
-            <view class="zan-col zan-col-16 price"><text>定金：￥4343.00-￥4343.00</text></view>
+            <view class="zan-col zan-col-16 price">
+                <text>定金：￥4343.00-￥4343.00</text>
+            </view>
             <view class="zan-col zan-col-8 buy">
                 <button class="zan-btn zan-btn--primary" bindtap="toggleBottomPopup">立即购买</button>
             </view>
         </view>
 
 
-        
+
 
 
 
@@ -123,9 +158,7 @@
     <view class="zan-popup__mask" bindtap="handleTogglePopupTupping"></view>
     <view class="zan-popup__container popup-example--center">
         <view class="section tc">
-            <video class='tupping' src="{{tuppingSrc}}" autoplay="true"
-                    objectFit="contain" bindended="handleTogglePopupTupping"
-                    poster="{{tuppingPosterSrc}}" controls="true" ></video>
+            <video class='tupping' src="{{tuppingSrc}}" autoplay="true" objectFit="contain" bindended="handleTogglePopupTupping" poster="{{tuppingPosterSrc}}" controls="true"></video>
         </view>
     </view>
 </view>
@@ -142,7 +175,7 @@
                 <template is="zan-tab" data="{{ ...tab1, componentId: 'tab1' }}"></template>
                 <view class='cub-detail zan-row'>
                     <view class="zan-col zan-col-12">
-                        <image src="http://img.danshengougou.com/upload/pet/15ba67defeb00bbece0bb515ebd41c50.jpg" class="cub-img" mode="widthFix"/>
+                        <image src="http://img.danshengougou.com/upload/pet/15ba67defeb00bbece0bb515ebd41c50.jpg" class="cub-img" mode="widthFix" />
                     </view>
                     <view class="zan-col zan-col-12">
                         <view class='data'>
@@ -155,9 +188,11 @@
                                 <view class='zan-col zan-col-24'>定金：￥434.00</view>
                             </view>
                             <view class='buy zan-row'>
-                            
+
                                 <view class='zan-col zan-col-10'>联系热线：</view>
-                                <view class='zan-col zan-col-14'><text class='view-green' bindtap='handleCallMe'>立即拨打</text></view>
+                                <view class='zan-col zan-col-14'>
+                                    <text class='view-green' bindtap='handleCallMe'>立即拨打</text>
+                                </view>
                                 <view class='zan-col zan-col-10'>联系微信：</view>
                                 <view class='zan-col zan-col-14'>
                                     <view class='view-green' bindtap='handleWechatMe'>18108176572</view>
@@ -173,11 +208,10 @@
 
         </view>
 
-        
+
 
     </view>
 </view>
 
 
 <template is="zan-toast" data="{{ zanToast }}"></template>
-

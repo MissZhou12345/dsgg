@@ -1,0 +1,75 @@
+<import src="/dist/tab/index.wxml" />
+
+<view class="container trends" style="background:url('/assets/images/bodybg.jpg') repeat #f5f6f7">
+    <view class='zan-panel tractate'>
+        <textarea class='' maxlength="1000" placeholder='说点什么吧...'></textarea>
+    </view>
+    <view class='zan-panel media'>
+
+        <view class="zan-field attachment">
+            <view class='title'>
+                <view class="zan-cell__hd zan-field__title">图片，视频</view>
+                <view class='num zan-pull-right'>
+                    <text class='ing'>0</text>
+                    <text class='hx'>/</text>
+                    <text class='finish'>2</text>
+                </view>
+            </view>
+
+            <view class='error'>
+                <template is="zan-noticebar" data="{{ ...static1, componentId: 'static1'  }}"></template>
+            </view>
+
+            <view class='list'>
+                <view class='item'>
+                    <image src="http://img.danshengougou.com/upload/pet/1a0645cad906095456297aa09ac17363.jpg?x-oss-process=image/crop,x_0,y_0,w_800,h_800,g_center" mode="widthFix"></image>
+                    <view class='close'>x</view>
+                    <view class='progress'>29%</view>
+                </view>
+                <view class='item add'>
+                    <text>+</text>
+                </view>
+            </view>
+
+        </view>
+
+        <view class='zan-field event' bindtap='handleChoiseEvent'>
+            <text class='zan-icon zan-icon-other-pay'></text>
+            <text class='wz'>第一针疫苗</text>
+        </view>
+
+
+        <view class='zan-field event-select' bindtap='handleChoiseEvent'>
+            <text class='zan-icon zan-icon-other-pay'></text>
+            <text class='wz'>第一针疫苗</text>
+        </view>
+
+    </view>
+
+    <view class='zan-panel'>
+        <button class="zan-btn zan-btn--large zan-btn--primary">发布</button>
+    </view>
+
+
+</view>
+
+
+
+
+<view class="popup-example--bottom zan-popup zan-popup--bottom {{ showCubBigEventPopup ? 'zan-popup--show' : ''}}">
+    <view class="zan-popup__mask" catchtap="toggleCubBigEventPopup"></view>
+    <view class="zan-popup__container big-event">
+
+
+        <template is="zan-tab" data="{{ ...tab1, componentId: 'tab1' }}"></template>
+
+        <view class='zan-row events'>
+            <view class='zan-col zan-col-8'><text class='zan-tag zan-tag--primary zan-tag--disabled'>第一针疫苗</text></view>
+            <view class='zan-col zan-col-8'><text class='zan-tag zan-tag--primary'>第一针疫苗</text></view>
+            <view class='zan-col zan-col-8'><text class='zan-tag zan-tag--primary zan-tag--disabled'>第一针疫苗</text></view>
+            <view class='zan-col zan-col-8'><text class='zan-tag zan-tag--primary zan-tag--disabled'>第一针疫苗</text></view>
+        </view>
+
+
+    </view>
+</view>

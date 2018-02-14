@@ -2,6 +2,10 @@
 .dsgg-detail swiper{height: 240px;}
 .dsgg-detail .slide-image{width: 100%;}
 
+.dsgg-detail .tools{padding:10px 18px;}
+.dsgg-detail .tools .zan-icon{margin-right: 4px;}
+.dsgg-detail .tools .add-trends{display: inline-block;}
+.dsgg-detail .tools .share{display: inline-block;}
 
 .dsgg-detail .info{padding: 15px 18px;line-height: 22px;font-size: 12px;}
 .dsgg-detail .info .ym-qc{}
